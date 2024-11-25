@@ -9,11 +9,11 @@ export default function index() {
        <div className={styles.body}>
         {
             links.map( (link, i) => {
-                const { title, href } = link;
+                const { title } = link;
                 return (
                     <div key={`b_${i}`} className={styles.linkContainer}>
                         <motion.div
-                          href={href}
+                        //   href={href}
                           custom={i}
                           variants={perspective}
                           initial="initial"
